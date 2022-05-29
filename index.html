@@ -4,13 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <title>Document</title>
+
+    <style>
+        *   {
+            box-sizing: border-box;
+            }
+
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        .header{
+
+            background-color: #F1F1F1;
+            width: 100%;
+            height: 130px;
+        }
+        .header>h1{
+            text-align: center;
+            padding: 45px;
+        }
+
+        .container::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #content-left{
+
+            width: 33%;
+            height: 200px;
+            background-color: #488AC7;
+            padding: 10px;
+            text-align: center;
+            float: left;
+
+        }
+
+        #content-middle{
+
+            width: 33%;
+            height: 200px;
+            background-color: #5f84a5;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            
+        }
+        #content-right{
+
+            width: 34%;
+            height: 200px;
+            background-color: #35597a;
+            padding: 10px;
+            text-align: center;
+            float: left;
+          
+        }
+        .footer{
+            background-color: aquamarine;
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            float: left;
+        }
+        .footer::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+    </style>
 </head>
 <body>
+
+    <div class="top">
+        <h2>CSS Template using Grid</h2>
+  
+        <p> In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other. Resize the browser window to see the responsive effect.</p> 
+
+        <p> <b>Note:</b>  The Grid Layout Module is not supported in Internet Explorer or Edge 15 eand earlier versions.
+        </p> 
+
+    </div>
     
-    <h1>This is title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corrupti magnam dicta reiciendis dolore cum eos quod dignissimos fugiat assumenda minus, molestias saepe provident maiores porro esse ex. Ut, sed!</p>
-    
+    <div class="header">
+        <h1>Header</h1>
+
+    </div>
+
+    <div class="container">
+
+        <div id="content-left">
+            <p>column</p>
+        </div>
+        <div id="content-middle">
+            <p>column</p>
+        </div>
+        <div id="content-right">
+            <p>column</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+
+    </div>
+
 
 </body>
 </html>
